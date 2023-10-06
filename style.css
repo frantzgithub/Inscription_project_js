@@ -1,0 +1,114 @@
+:root{
+    --colorPrincipal: #efefef;
+    --secondColor: teal;
+    --bordure: 1px solid teal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Sans-Serif;
+    font-weight: 600;
+    background-color: var(--colorPrincipal);
+}
+.content{
+    width: 70%;
+    margin: 50px auto;
+    background-color: var(--secondColor);
+    padding:20px;
+    text-align:center;
+    color:var(--colorPrincipal);
+}
+form{
+    width:50%;
+    margin: auto;
+    background-color: var(--colorPrincipal);
+    padding: 15px;
+    margin-top:20px;
+}
+form input, select{
+    padding: 10px;
+    border: var(--bordure);
+    border-radius:5px;
+}
+form input:focus, select:focus{
+    outline: none;
+}
+form select{
+    font-size: 20px;
+    background-color: var(--secondColor);
+    color:var(--colorPrincipal);
+}
+form button{
+    border:var(--bordure);
+    background-color: var(--colorPrincipal);
+    color:var(--secondColor);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius:10px;
+    transition: all 0.3s ease-in-out;
+}
+form button:hover{
+    background-color: var(--secondColor);
+    color:var(--colorPrincipal);
+    border: none;
+}
+.section{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.section p{
+    width: 17%;
+}
+
+
+.section__titre{
+    font-size: 25px;
+    text-shadow: 1px 3px 10px var(--colorPrincipal);
+}
+.div__element p{
+    font-size: 17px;
+    background-color: var(--colorPrincipal);
+    color:var(--secondColor);
+    padding: 10px;
+    border-radius:5px;
+}
+.email{
+    width: 40% !important;
+}
+
+@media screen and (max-width:600px ){
+  .content{
+    width: 97%;
+    margin: 20px auto;
+    padding: 10px;
+    
+}
+form{
+  width: 80%;
+}
+form input, select{
+  width: 80%;
+}
+form select{
+  font-size: 15px;
+}
+form button{
+  font-size: 17px;
+}
+.section__titre{
+  font-size: 18px;
+}
+.div__element p{
+  font-size: 10px;
+  padding: 5px;
+}
+}
